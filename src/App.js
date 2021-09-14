@@ -4,7 +4,7 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
-import { Main } from './pages';
+import { EditMode } from './pages';
 import { PageWrapper } from './components'
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
     <PageWrapper>
     <Router>
       <Switch>
-        <Route exact path="/"><Main /></Route>
+        <Route exact path="/"><EditMode /></Route>
       </Switch>
     </Router>
     </PageWrapper>

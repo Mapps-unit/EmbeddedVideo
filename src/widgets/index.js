@@ -1,5 +1,7 @@
-import EmbeddedVideo from "./EmbeddedVideo";
+import YoutubeVideo from "./Video/YoutubeVideo";
+import AddVideo from "./Video/AddVideo";
 
 export {
-	EmbeddedVideo
+	YoutubeVideo,
+	AddVideo
 };
