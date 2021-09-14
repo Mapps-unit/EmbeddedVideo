@@ -1,7 +1,8 @@
+
 import React, { useState } from "react";
 import Cookies from 'js-cookie';
 
-function AddVideo(props) {
+function AddImage(props) {
   const [url, setUrl] = useState("");
 
   const handleChange = ({ target: { value } }) => {
@@ -10,16 +11,8 @@ function AddVideo(props) {
 
   const handleSubmit = (event) => {
     try {
-      let urlObj = new URL(url);
-      // let widget_list = Cookies.get('widget');
-      // const new_widget = {
-      //   type: 'video',
-      //   id: urlObj.searchParams.get("v"),
-      //   size: 'm'
-      // };
-      const new_widget = urlObj.searchParams.get("v");
       // Cookies.set('widget', widget_list.concat(new_widget));
-      Cookies.set('video', new_widget);
+      Cookies.set('image', url);
       props.setShow(false);
     } catch (e) {
       alert("url이 이상해요~");
@@ -47,4 +40,4 @@ function AddVideo(props) {
   );
 }
 
-export default AddVideo;
+export default AddImage;

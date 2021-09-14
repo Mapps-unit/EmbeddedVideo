@@ -1,5 +1,6 @@
 import EditMode from "./EditMode";
-
+import Main from "./Main";
 export {
-	EditMode
+	EditMode,
+	Main
 };

@@ -11,7 +11,7 @@ const WidgetWrapper = ({ children }) => {
 				align-items: 'center';
 				flex-direction: 'column';
 				border-radius: 10px;
-				border: 1px black solid;
+				border: 1px grey solid;
 			`}>
       {children}
     </div>
