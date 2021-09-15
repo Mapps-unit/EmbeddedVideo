@@ -1,15 +1,17 @@
-import React from 'react';
-import { EditMode } from '.';
-import Cookies from 'js-cookie';
+import React, { useState } from "react";
+import { NormalMode } from ".";
+import { PageWrapper } from "../components";
+import { ToggleButton } from "../components";
 
 function Main(props) {
-	Cookies.remove('video');
+  const [isEditMode, setIsEditMode] = useState(false);
 
-	return (
-		<div>
-			<EditMode />
-		</div>
-	);
+  return (
+    <PageWrapper>
+      <NormalMode />
+      <ToggleButton editMode={isEditMode} changeMode={() => setIsEditMode} />
+    </PageWrapper>
+  );
 }
 
 export default Main;

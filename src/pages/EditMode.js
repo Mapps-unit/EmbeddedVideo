@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { PageWrapper, ToolBarWrapper } from '../components';
-import { AddVideo, YoutubeVideo, AddImage, Image } from '../widgets';
-import Cookies from 'js-cookie';
+import { PageWrapper, ToolBarWrapper, ToggleButton, Widgets } from '../components';
+import { AddVideo, AddImage } from '../widgets';
 
 function EditMode(props) {
   const [showAddVideo, setShowAddVideo] = useState(false);
@@ -12,8 +11,7 @@ function EditMode(props) {
   //   return <YoutubeVideo embedId={video} />;
   // });
 
-      const video = <YoutubeVideo embedId={Cookies.get('video')} />
-      const image = <Image src={Cookies.get('image')} />
+     
 
   return (
     <PageWrapper>
@@ -21,10 +19,10 @@ function EditMode(props) {
         <button onClick={() => setShowAddVideo((show) => !show)}> ► </button>
         <button onClick={() => setShowAddImage((show) => !show)}> 🖼 </button>
       </ToolBarWrapper>
+			<ToggleButton label="Save" goto="/"/>
       {showAddVideo && <AddVideo setShow={() => setShowAddVideo((show) => !show)} />}
       {showAddImage && <AddImage setShow={() => setShowAddImage((show) => !show)} />}
-      video: {video}
-      image: {image}
+      <Widgets />
     </PageWrapper>
   );
 }
