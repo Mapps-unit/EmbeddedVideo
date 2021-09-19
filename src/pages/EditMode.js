@@ -14,7 +14,7 @@ function EditMode(props) {
     <PageWrapper>
       <EditWrapper>
         <ToolBar />
-        <ToggleButton label='Save' goto='/' />
+        <ToggleButton label='Save' onClick={props.changeMode} />
         
         <Widgets />
       </EditWrapper>

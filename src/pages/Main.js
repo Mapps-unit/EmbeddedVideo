@@ -1,15 +1,14 @@
 import React, { useState } from "react";
-import { NormalMode } from ".";
+import { NormalMode, EditMode } from ".";
 import { PageWrapper } from "../components";
-import { ToggleButton } from "../components";
 
 function Main(props) {
   const [isEditMode, setIsEditMode] = useState(false);
 
   return (
     <PageWrapper>
-      <NormalMode />
-      <ToggleButton editMode={isEditMode} changeMode={() => setIsEditMode} />
+      {(isEditMode === false) && <NormalMode changeMode={() => setIsEditMode(true)}/>}
+      {(isEditMode === true) && <EditMode changeMode={() => setIsEditMode(false)}/>}
     </PageWrapper>
   );
 }

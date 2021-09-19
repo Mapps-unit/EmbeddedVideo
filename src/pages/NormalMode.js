@@ -5,7 +5,7 @@ import { PageWrapper, ToggleButton, Widgets } from '../components';
 function NormalMode(props) {
 	return (
 		<PageWrapper>
-			<ToggleButton label="Edit" goto="/edit"/>
+			<ToggleButton label='Edit' onClick={props.changeMode}/>
 			<Widgets />
 		</PageWrapper>
 	);
