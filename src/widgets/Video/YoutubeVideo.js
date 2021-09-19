@@ -10,7 +10,8 @@ function YoutubeVideo (props) {
   }
   const reset_style = 'modestbranding=1&controls=0&showinfo=0&rel=0';
   const loop = props.loop || 'loop=0';
-  const autoplay = props.autoplay || 'autoplay=1';
+  // const autoplay = props.autoplay || 'autoplay=1';
+  const autoplay = props.autoplay || 'autoplay=0';
   const options = `?${reset_style}&${autoplay}&${loop}`;
   let width ='640';
   let height = '320';

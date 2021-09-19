@@ -1,24 +1,16 @@
 import React from "react";
 import {
-  PageWrapper,
   EditWrapper,
   ToolBar,
-  ToggleButton,
   Widgets,
-} from "../components";
+} from "..";
 
 function EditMode(props) {
- 
-
   return (
-    <PageWrapper>
       <EditWrapper>
-        <ToolBar />
-        <ToggleButton label='Save' onClick={props.changeMode} />
-        
+          <ToolBar />
         <Widgets />
       </EditWrapper>
-    </PageWrapper>
   );
 }
 

@@ -7,7 +7,11 @@ import ToggleButton from "./Button/ToggleButton";
 import ToolBarPartition from "./ToolBar/ToolBarPartition";
 import Widgets from "./Widgets";
 import EditWrapper from "./Wrapper/EditWrapper";
+import NormalWrapper from "./Wrapper/NormalWrapper";
 import AddWidgetButton from "./Button/AddWidgetButton";
+import EditMode from "./Mode/EditMode";
+import NormalMode from "./Mode/NormalMode";
+
 export {
 	PageWrapper,
 	WidgetWrapper,
@@ -18,5 +22,8 @@ export {
 	ToggleButton,
 	Widgets,
 	EditWrapper,
+	NormalWrapper,
 	AddWidgetButton,
+	NormalMode,
+	EditMode
 };

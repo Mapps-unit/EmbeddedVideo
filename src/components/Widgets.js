@@ -6,8 +6,8 @@ function Widgets(props) {
   const video = <YoutubeVideo embedId={Cookies.get("video")} />;
   const image = <Image src={Cookies.get("image")} />;
   return (<div>
-	  video: {video}
-      image: {image}
+	  {video}
+    {image}
   </div>);
 }
 
