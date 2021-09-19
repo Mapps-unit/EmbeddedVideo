@@ -6,14 +6,15 @@ const ToolBarWrapper = ({ children }) => {
     <div
       className={css`
 				display: flex;
-				background-color: #F5F5F5;
+				max-width: 100%;
+				background-color: white;
 				flex-direction: row;
 				padding: 5px 100px;
-				justify-content: center;
+				justify-content: start;
 				align-items: center;
 				border-radius: 3px;
 				border: 1px grey solid;
-				margin: 20px;
+				margin: auto;
 			`}>
       {children}
     </div>
