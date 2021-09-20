@@ -41,8 +41,6 @@ function ToolBar(props) {
 	/>;
   });
 
-
-
   return (
     <ToolBarWrapper>
       <ToolBarGroup>
@@ -52,7 +50,6 @@ function ToolBar(props) {
       <ToolBarGroup>
         {AddWidgetButtons}
       </ToolBarGroup>
-
     </ToolBarWrapper>
   );
 }
